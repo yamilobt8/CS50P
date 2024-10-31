@@ -15,6 +15,7 @@ while True:
         elif len(names) == 2:
             output += f'{names[0]} and {names[1]}'
         else:
-            output += ', '.join(names[:-1]) + f', and {names[-1]}'
+            output += ', '.join(names[:-1]) + f', and {names[-1]}' # Add The Names Except The Last One by names[:-1]
+                                                                   # Then The Last Name Which is names[-1]
         print(output)
         sys.exit(0)
